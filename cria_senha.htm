@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function testa_senha {
+                var p1=document.forms["formsenha"]["senha"].value;
+                var p2=document.forms["formsenha"]["senha_conf"].value;
+            
+            if(document.forms["formsenha"]["senha"].value.leght < 6) {
+                alert("Senha muito pequena.Digite pelo menos 6 caracteres.");
+                return false;
+            }        
+
+            if (p1 !== p2) {
+                alert("Senhas Diferentes Tente de novo.");
+                return false;
+            }
+        }
+        </script>
+    </head>
+</html>
